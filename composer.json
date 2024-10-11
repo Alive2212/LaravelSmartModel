@@ -1,0 +1,41 @@
+{
+    "name": "alive2212/laravel-smart-model",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bob Noe",
+            "email": "babaknodoust@gmail.com",
+            "homepage": "https://alive8.ir"
+        }
+    ],
+    "homepage": "https://github.com/alive2212/laravel-smart-model",
+    "keywords": ["Laravel", "LaravelSmartModel"],
+    "require": {
+        "illuminate/support": "~7|~8|~9|~10|~11|~12|~13"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alive2212\\LaravelSmartModel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alive2212\\LaravelSmartModel\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alive2212\\LaravelSmartModel\\LaravelSmartModelServiceProvider"
+            ],
+            "aliases": {
+                "LaravelSmartModel": "Alive2212\\LaravelSmartModel\\Facades\\LaravelSmartModel"
+            }
+        }
+    }
+}
